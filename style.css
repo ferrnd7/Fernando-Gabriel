@@ -30,10 +30,12 @@ ul {
     line-height: 1.8;
 }
 
+/* CORREÇÃO: Tabela centralizada e com tamanho melhorado */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
+    margin-bottom: 25px; /* espaço extra */
 }
 
 th, td {
