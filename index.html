@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -10,20 +13,21 @@
 
     <h1>Grand Theft Auto V</h1>
 
-   <img src="https://images.alphacoders.com/439/439818.jpg" alt="Capa Oficial de Grand Theft Auto V com os personagens Michael, Franklin e Trevor">
+    <!-- Imagem de capa confiável -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Grand_Theft_Auto_V_logo.svg/1200px-Grand_Theft_Auto_V_logo.svg.png" alt="Logo Oficial de Grand Theft Auto V" class="capa-img">
 
     <h2>Sobre o Jogo</h2>
-    <p>Grand Theft Auto V é um jogo eletrônico de ação e aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. Lançado originalmente em 2013, o título se tornou um dos maiores sucessos da história dos videogames.</p>
+    <p>Grand Theft Auto V é um jogo eletrônico de ação e aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. Lançado originalmente em 2013, o título se tornou um dos maiores sucessos de vendas e da crítica na história da indústria dos videogames.</p>
 
-    <p>A história se passa no estado fictício de San Andreas, baseado na Califórnia do Sul, e segue três criminosos: o ex-assaltante Michael De Santa, o contrabandista Trevor Philips e o gangster de rua Franklin Clinton.</p>
+    <p>A história se passa no estado fictício de San Andreas, baseado na Califórnia do Sul, e segue três criminosos: o ex-assaltante de bancos Michael De Santa, o contrabandista de armas Trevor Philips e o gangster de rua Franklin Clinton.</p>
 
-    <p>O grande diferencial do jogo é a possibilidade de alternar livremente entre esses três protagonistas durante as missões ou no modo livre, explorando a vasta cidade de Los Santos.</p>
+    <p>O grande diferencial do jogo é a possibilidade de alternar livremente entre esses três protagonistas durante as missões ou no modo livre, permitindo uma dinâmica única para explorar a vasta cidade de Los Santos.</p>
 
     <h2>Protagonistas</h2>
     <ul>
         <li><strong>Franklin Clinton:</strong> Jovem e ambicioso, busca crescer na vida urbana.</li>
-        <li><strong>Michael De Santa:</strong> Ex-assaltante veterano vivendo no programa de proteção.</li>
-        <li><strong>Trevor Philips:</strong> Ex-piloto militar imprevisível e destemido.</li>
+        <li><strong>Michael De Santa:</strong> Ex-assaltante veterano vivendo no programa de proteção a testemunhas.</li>
+        <li><strong>Trevor Philips:</strong> Ex-piloto militar sociopata e imprevisível.</li>
         <li><strong>Lester Crest:</strong> O cérebro por trás dos grandes esquemas de assalto.</li>
     </ul>
 
@@ -45,59 +49,100 @@
             <tr>
                 <td>Michael</td>
                 <td>Tiroteio</td>
-                <td>Câmera lenta em combates</td>
+                <td>Câmera lenta em combates a pé</td>
             </tr>
             <tr>
                 <td>Trevor</td>
-                <td>Combate Aéreo</td>
-                <td>Modo Fúria (invulnerabilidade)</td>
+                <td>Combate e Pilotagem de Aviões</td>
+                <td>Modo Fúria (invulnerabilidade temporária)</td>
             </tr>
         </tbody>
     </table>
 
+    <!-- INTERAÇÃO 1: CARDS QUE VIRAM COM CSS (HOVER) -->
+    <h2>🎴 Cards Interativos: Passe o mouse para ver a Curiosidade!</h2>
+    <div class="cards-container">
+        
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Franklin Clinton</h3>
+                    <p>❓ Qual é a origem do seu cão Chop?</p>
+                </div>
+                <div class="card-back">
+                    <h3>Resposta:</h3>
+                    <p>Chop pertence originalmente ao seu amigo Lamar Davis, que deixa o cachorro aos cuidados de Franklin!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Michael De Santa</h3>
+                    <p>❓ Qual era o seu verdadeiro sobrenome?</p>
+                </div>
+                <div class="card-back">
+                    <h3>Resposta:</h3>
+                    <p>Michael Townley! Ele mudou para "De Santa" ao entrar no programa de proteção a testemunhas do FIB.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <h3>Trevor Philips</h3>
+                    <p>❓ Qual é o nome da sua empresa?</p>
+                </div>
+                <div class="card-back">
+                    <h3>Resposta:</h3>
+                    <p>Trevor Philips Enterprises! Focada no tráfego de armas e negócios na região de Blaine County.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- INTERAÇÃO 2: QUIZ COM FORMULÁRIO E SANFONA -->
+    <h2>📝 Teste de Conhecimento: Quiz GTA V</h2>
+    <form class="quiz-form" onsubmit="return false;">
+        <fieldset>
+            <legend>1. Qual personagem consegue desacelerar o tempo enquanto dirige?</legend>
+            <label><input type="radio" name="p1"> Michael</label><br>
+            <label><input type="radio" name="p1"> Trevor</label><br>
+            <label><input type="radio" name="p1"> Franklin</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Em qual cidade fictícia se passa a maior parte do jogo?</legend>
+            <label><input type="radio" name="p2"> Liberty City</label><br>
+            <label><input type="radio" name="p2"> Los Santos</label><br>
+            <label><input type="radio" name="p2"> Vice City</label>
+        </fieldset>
+
+        <details class="gabarito">
+            <summary>🔍 Clique para conferir o Gabarito</summary>
+            <ul>
+                <li><strong>Questão 1:</strong> Franklin</li>
+                <li><strong>Questão 2:</strong> Los Santos</li>
+            </ul>
+        </details>
+    </form>
+
+    <h2>Saiba Mais</h2>
+    <p>Visite o <a href="https://www.rockstargames.com/gta-v" target="_blank">Site Oficial da Rockstar Games</a> para mais detalhes.</p>
+
+    <h2>Fale Conosco</h2>
+    <form action="#">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+
+        <button type="submit">Enviar</button>
+    </form>
 
 </body>
-
-
-
-
-
-<h2>🎮 Desafio Fan GTA V - Teste seus Conhecimentos</h2>
-
-<form class="quiz-form">
-    <!-- Pergunta 1 -->
-    <fieldset>
-        <legend>1. Qual é o nome do ex-assaltante de bancos que vive em Vinewood?</legend>
-        <label><input type="radio" name="p1" value="f"> Franklin Clinton</label><br>
-        <label><input type="radio" name="p1" value="m"> Michael De Santa</label><br>
-        <label><input type="radio" name="p1" value="t"> Trevor Philips</label><br>
-        <label><input type="radio" name="p1" value="l"> Lester Crest</label>
-    </fieldset>
-
-    <!-- Pergunta 2 -->
-    <fieldset>
-        <legend>2. Qual personagem tem a habilidade especial de desacelerar o tempo ao dirigir?</legend>
-        <label><input type="radio" name="p2" value="t"> Trevor</label><br>
-        <label><input type="radio" name="p2" value="m"> Michael</label><br>
-        <label><input type="radio" name="p2" value="f"> Franklin</label>
-    </fieldset>
-
-    <!-- Pergunta 3 -->
-    <fieldset>
-        <legend>3. Em qual cidade fictícia se passa a maior parte do jogo?</legend>
-        <label><input type="radio" name="p3" value="lc"> Liberty City</label><br>
-        <label><input type="radio" name="p3" value="ls"> Los Santos</label><br>
-        <label><input type="radio" name="p3" value="vc"> Vice City</label>
-    </fieldset>
-
-    <!-- Respostas / Gabarito em sanfona usando HTML puro -->
-    <details class="gabarito">
-        <summary>🔍 Clique aqui para ver o Gabarito (Respostas)</summary>
-        <ul>
-            <li><strong>1:</strong> Michael De Santa</li>
-            <li><strong>2:</strong> Franklin</li>
-            <li><strong>3:</strong> Los Santos</li>
-        </ul>
-    </details>
-</form>
 </html>
