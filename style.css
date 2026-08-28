@@ -12,7 +12,7 @@ body {
 }
 
 .capa-img {
-    max-width: 280px; /* Altere este valor para deixar maior ou menor */
+    max-width: 350px; /* Altere este valor para deixar maior ou menor */
     width: 100%;
     height: auto;
     display: block;
