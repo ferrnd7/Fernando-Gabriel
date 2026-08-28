@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,138 +8,148 @@
 </head>
 <body>
 
-    <h1>Grand Theft Auto V</h1>
+    <header class="banner">
+        <h1>Grand Theft Auto V</h1>
+        <!-- Imagem de alta compatibilidade e link público estável -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Grand_Theft_Auto_V_logo.svg" alt="Logo GTA V" class="logo-gta">
+    </header>
 
-    <!-- Imagem de capa confiável -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Grand_Theft_Auto_V_logo.svg/1200px-Grand_Theft_Auto_V_logo.svg.png" alt="Logo Oficial de Grand Theft Auto V" class="capa-img">
-
-    <h2>Sobre o Jogo</h2>
-    <p>Grand Theft Auto V é um jogo eletrônico de ação e aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. Lançado originalmente em 2013, o título se tornou um dos maiores sucessos de vendas e da crítica na história da indústria dos videogames.</p>
-
-    <p>A história se passa no estado fictício de San Andreas, baseado na Califórnia do Sul, e segue três criminosos: o ex-assaltante de bancos Michael De Santa, o contrabandista de armas Trevor Philips e o gangster de rua Franklin Clinton.</p>
-
-    <p>O grande diferencial do jogo é a possibilidade de alternar livremente entre esses três protagonistas durante as missões ou no modo livre, permitindo uma dinâmica única para explorar a vasta cidade de Los Santos.</p>
-
-    <h2>Protagonistas</h2>
-    <ul>
-        <li><strong>Franklin Clinton:</strong> Jovem e ambicioso, busca crescer na vida urbana.</li>
-        <li><strong>Michael De Santa:</strong> Ex-assaltante veterano vivendo no programa de proteção a testemunhas.</li>
-        <li><strong>Trevor Philips:</strong> Ex-piloto militar sociopata e imprevisível.</li>
-        <li><strong>Lester Crest:</strong> O cérebro por trás dos grandes esquemas de assalto.</li>
-    </ul>
-
-    <h2>Estatísticas dos Personagens</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Personagem</th>
-                <th>Especialidade</th>
-                <th>Habilidade Especial</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Franklin</td>
-                <td>Pilotagem</td>
-                <td>Câmera lenta ao dirigir</td>
-            </tr>
-            <tr>
-                <td>Michael</td>
-                <td>Tiroteio</td>
-                <td>Câmera lenta em combates a pé</td>
-            </tr>
-            <tr>
-                <td>Trevor</td>
-                <td>Combate e Pilotagem de Aviões</td>
-                <td>Modo Fúria (invulnerabilidade temporária)</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- INTERAÇÃO 1: CARDS QUE VIRAM COM CSS (HOVER) -->
-    <h2>🎴 Cards Interativos: Passe o mouse para ver a Curiosidade!</h2>
-    <div class="cards-container">
+    <main class="conteudo">
         
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
+        <section class="card-secao">
+            <h2>Sobre o Jogo</h2>
+            <p>Grand Theft Auto V é um jogo eletrônico de ação e aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. Lançado originalmente em 2013, o título se tornou um dos maiores sucessos de vendas da história.</p>
+            <p>A história se passa no estado fictício de San Andreas, baseado na Califórnia do Sul, e segue três criminosos: Michael De Santa, Trevor Philips e Franklin Clinton.</p>
+        </section>
+
+        <section class="card-secao">
+            <h2>Protagonistas</h2>
+            <div class="grid-personagens">
+                <div class="mini-card">
                     <h3>Franklin Clinton</h3>
-                    <p>❓ Qual é a origem do seu cão Chop?</p>
+                    <p>Jovem e ambicioso, busca crescer na vida urbana de Los Santos.</p>
                 </div>
-                <div class="card-back">
-                    <h3>Resposta:</h3>
-                    <p>Chop pertence originalmente ao seu amigo Lamar Davis, que deixa o cachorro aos cuidados de Franklin!</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
+                <div class="mini-card">
                     <h3>Michael De Santa</h3>
-                    <p>❓ Qual era o seu verdadeiro sobrenome?</p>
+                    <p>Ex-assaltante veterano vivendo no programa de proteção a testemunhas.</p>
                 </div>
-                <div class="card-back">
-                    <h3>Resposta:</h3>
-                    <p>Michael Townley! Ele mudou para "De Santa" ao entrar no programa de proteção a testemunhas do FIB.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
+                <div class="mini-card">
                     <h3>Trevor Philips</h3>
-                    <p>❓ Qual é o nome da sua empresa?</p>
-                </div>
-                <div class="card-back">
-                    <h3>Resposta:</h3>
-                    <p>Trevor Philips Enterprises! Focada no tráfego de armas e negócios na região de Blaine County.</p>
+                    <p>Ex-piloto militar sociopata, imprevisível e destemido.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-    </div>
+        <section class="card-secao">
+            <h2>Estatísticas dos Personagens</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Personagem</th>
+                        <th>Especialidade</th>
+                        <th>Habilidade Especial</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Franklin</td>
+                        <td>Pilotagem</td>
+                        <td>Câmera lenta ao dirigir</td>
+                    </tr>
+                    <tr>
+                        <td>Michael</td>
+                        <td>Tiroteio</td>
+                        <td>Câmera lenta em combates a pé</td>
+                    </tr>
+                    <tr>
+                        <td>Trevor</td>
+                        <td>Combate / Aviação</td>
+                        <td>Modo Fúria (Invulnerabilidade)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <!-- INTERAÇÃO 2: QUIZ COM FORMULÁRIO E SANFONA -->
-    <h2>📝 Teste de Conhecimento: Quiz GTA V</h2>
-    <form class="quiz-form" onsubmit="return false;">
-        <fieldset>
-            <legend>1. Qual personagem consegue desacelerar o tempo enquanto dirige?</legend>
-            <label><input type="radio" name="p1"> Michael</label><br>
-            <label><input type="radio" name="p1"> Trevor</label><br>
-            <label><input type="radio" name="p1"> Franklin</label>
-        </fieldset>
+        <!-- SEÇÃO COM DESIGN INTERATIVO REFEITO -->
+        <section class="card-secao">
+            <h2>🎴 Curiosidades Interativas</h2>
+            <p class="instrucao">Passe o mouse por cima dos cards para revelar as respostas:</p>
 
-        <fieldset>
-            <legend>2. Em qual cidade fictícia se passa a maior parte do jogo?</legend>
-            <label><input type="radio" name="p2"> Liberty City</label><br>
-            <label><input type="radio" name="p2"> Los Santos</label><br>
-            <label><input type="radio" name="p2"> Vice City</label>
-        </fieldset>
+            <div class="grid-curiosidades">
+                
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="tag">Franklin</span>
+                            <p>Qual é a origem do seu cão Chop?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Chop pertence ao seu amigo Lamar Davis, que o deixa aos cuidados de Franklin!</p>
+                        </div>
+                    </div>
+                </div>
 
-        <details class="gabarito">
-            <summary>🔍 Clique para conferir o Gabarito</summary>
-            <ul>
-                <li><strong>Questão 1:</strong> Franklin</li>
-                <li><strong>Questão 2:</strong> Los Santos</li>
-            </ul>
-        </details>
-    </form>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="tag">Michael</span>
+                            <p>Qual era o seu verdadeiro sobrenome?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Michael Townley! Ele mudou para "De Santa" ao entrar no programa do FIB.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <h2>Saiba Mais</h2>
-    <p>Visite o <a href="https://www.rockstargames.com/gta-v" target="_blank">Site Oficial da Rockstar Games</a> para mais detalhes.</p>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <span class="tag">Trevor</span>
+                            <p>Qual é o nome da sua empresa?</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Trevor Philips Enterprises! Focada no tráfego da região de Blaine County.</p>
+                        </div>
+                    </div>
+                </div>
 
-    <h2>Fale Conosco</h2>
-    <form action="#">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+        </section>
 
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        <section class="card-secao">
+            <h2>📝 Teste de Conhecimento</h2>
+            <form class="quiz-form">
+                <div class="pergunta-box">
+                    <p><strong>1. Qual personagem desacelera o tempo ao dirigir?</strong></p>
+                    <label><input type="radio" name="p1"> Michael</label>
+                    <label><input type="radio" name="p1"> Trevor</label>
+                    <label><input type="radio" name="p1"> Franklin</label>
+                </div>
 
-        <button type="submit">Enviar</button>
-    </form>
+                <div class="pergunta-box">
+                    <p><strong>2. Em qual cidade se passa a maior parte do jogo?</strong></p>
+                    <label><input type="radio" name="p2"> Liberty City</label>
+                    <label><input type="radio" name="p2"> Los Santos</label>
+                    <label><input type="radio" name="p2"> Vice City</label>
+                </div>
+
+                <details class="gabarito-btn">
+                    <summary>Ver Gabarito</summary>
+                    <p><strong>1:</strong> Franklin | <strong>2:</strong> Los Santos</p>
+                </details>
+            </form>
+        </section>
+
+        <section class="card-secao">
+            <h2>Fale Conosco</h2>
+            <form class="form-contato">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu E-mail" required>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+    </main>
 
 </body>
 </html>
