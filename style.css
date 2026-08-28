@@ -11,13 +11,13 @@ body {
     padding-bottom: 50px;
 }
 
-.banner img, 
-.logo-gta {
-    max-width: 180px; 
+.capa-img {
+    max-width: 200px; /* Altere este valor para deixar maior ou menor */
     width: 100%;
     height: auto;
     display: block;
-    margin: 15px auto 0;
+    margin: 15px auto 0; /* Centraliza a imagem */
+    border-radius: 8px; /* Opcional: arredonda levemente os cantos da imagem */
 }
 
 h1 {
