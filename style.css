@@ -225,4 +225,28 @@ th {
 
 .form-contato button:hover {
     background-color: #eab308;
+
+
+}
+
+
+
+
+.form-contato textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #0b111e;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.form-contato textarea:focus {
+    outline: none;
+    border-color: #facc15;
 }
