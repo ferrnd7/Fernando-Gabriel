@@ -11,13 +11,55 @@ body {
     padding-bottom: 50px;
 }
 
+/* Banner estilizado com degradê e brilho de fundo */
+.banner {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: radial-gradient(circle at center, #151d2a 0%, #0b0f19 75%);
+    border-bottom: 2px solid #1e293b;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(250, 204, 21, 0.1) 0%, transparent 70%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.banner h1, .banner .capa-img {
+    position: relative;
+    z-index: 1;
+}
+
+/* Título com animação de flutuação e brilho neon */
 h1 {
     color: #facc15;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
+    text-shadow: 0 0 15px rgba(250, 204, 21, 0.4);
+    animation: flutuarTitulo 3s ease-in-out infinite alternate;
+}
+
+@keyframes flutuarTitulo {
+    0% {
+        transform: translateY(0);
+        text-shadow: 0 0 10px rgba(250, 204, 21, 0.3), 0 0 20px rgba(56, 189, 248, 0.1);
+    }
+    100% {
+        transform: translateY(-6px);
+        text-shadow: 0 0 25px rgba(250, 204, 21, 0.8), 0 0 40px rgba(56, 189, 248, 0.3);
+    }
 }
 
 .capa-img {
@@ -91,7 +133,6 @@ p {
     font-size: 1.1rem;
 }
 
-/* Aqui estão as imagens redondas consertadas */
 .avatar-personagem {
     width: 90px;
     height: 90px;
@@ -256,7 +297,6 @@ th {
     background-color: #eab308;
 }
 
-/* Grid da Galeria consertado */
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
