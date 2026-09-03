@@ -11,6 +11,15 @@ body {
     padding-bottom: 50px;
 }
 
+h1 {
+    color: #facc15;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .capa-img {
     max-width: 350px; 
     width: 100%;
@@ -18,20 +27,12 @@ body {
     display: block;
     margin: 15px auto 0; 
     border-radius: 8px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-h1 {
-    color: #facc15;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-
-.logo-gta {
-    max-width: 200px;
-    height: auto;
-    filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));
+.capa-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
 }
 
 .conteudo {
@@ -47,6 +48,12 @@ h1 {
     padding: 25px;
     margin-top: 30px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 h2 {
@@ -62,7 +69,6 @@ p {
     margin-bottom: 10px;
     color: #cbd5e1;
 }
-  
 
 .grid-personagens {
     display: grid;
@@ -76,12 +82,24 @@ p {
     padding: 15px;
     border-radius: 8px;
     border-left: 4px solid #facc15;
+    text-align: center;
 }
 
 .mini-card h3 {
     color: #facc15;
-    margin-bottom: 5px;
+    margin: 10px 0 5px;
     font-size: 1.1rem;
+}
+
+/* Aqui estão as imagens redondas consertadas */
+.avatar-personagem {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #facc15;
+    margin: 0 auto;
+    display: block;
 }
 
 table {
@@ -100,7 +118,6 @@ th {
     background-color: #1e293b;
     color: #facc15;
 }
-
 
 .instrucao {
     font-size: 0.9rem;
@@ -171,7 +188,6 @@ th {
     font-weight: 500;
 }
 
-
 .pergunta-box {
     background-color: #1e293b;
     padding: 15px;
@@ -204,12 +220,24 @@ th {
     gap: 12px;
 }
 
-.form-contato input {
+.form-contato input, .form-contato textarea {
+    width: 100%;
     padding: 12px;
     border-radius: 6px;
     border: 1px solid #334155;
     background-color: #0b0f19;
     color: #fff;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.form-contato textarea {
+    resize: vertical;
+}
+
+.form-contato textarea:focus {
+    outline: none;
+    border-color: #facc15;
 }
 
 .form-contato button {
@@ -226,65 +254,9 @@ th {
 
 .form-contato button:hover {
     background-color: #eab308;
-
-
 }
 
-
-
-
-.form-contato textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    background-color: #0b111e;
-    border: 1px solid #1e293b;
-    border-radius: 6px;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: inherit;
-    resize: vertical;
-    box-sizing: border-box;
-}
-
-.form-contato textarea:focus {
-    outline: none;
-    border-color: #facc15;
-}
-
-
-/* Animação suave ao carregar as seções */
-.card-secao {
-    animation: fadeIn 0.8s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Efeito de brilho na imagem principal da capa */
-.capa-img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.capa-img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
-}
-
-/* Fotos redondas dos Protagonistas */
-.avatar-personagem {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #facc15;
-    margin: 0 auto 12px;
-    display: block;
-}
-
-/* Layout da Galeria de Fotos */
+/* Grid da Galeria consertado */
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
