@@ -253,54 +253,55 @@ th {
 }
 
 
+/* Animação suave ao carregar as seções */
 .card-secao {
-    animation: fadeIn 0.8s ease-in-out;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-
+/* Efeito de brilho na imagem principal da capa */
 .capa-img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .capa-img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(250, 204, 21, 0.4);
 }
 
-
+/* Fotos redondas dos Protagonistas */
 .avatar-personagem {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #facc15;
-    margin: 0 auto 12px;
-    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #facc15;
+    margin: 0 auto 12px;
+    display: block;
 }
 
-
+/* Layout da Galeria de Fotos */
 .galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .galeria-grid img {
-    width: 100%;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 2px solid #1e293b;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #1e293b;
+    transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .galeria-grid img:hover {
-    border-color: #facc15;
-    transform: translateY(-5px);
-} 
+    border-color: #facc15;
+    transform: translateY(-5px);
+}
