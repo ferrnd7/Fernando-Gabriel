@@ -11,7 +11,6 @@ body {
     padding-bottom: 50px;
 }
 
-/* Banner estilizado com degradê e brilho de fundo */
 .banner {
     text-align: center;
     padding: 50px 20px 30px;
@@ -316,4 +315,67 @@ th {
 .galeria-grid img:hover {
     border-color: #facc15;
     transform: translateY(-5px);
+}
+
+/* Estilização limpa para o Quiz em HTML/CSS Puro */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gabarito-detalhes-puro {
+    margin-top: 10px;
+    background-color: #1e293b;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-gabarito-abrir {
+    background-color: #38bdf8;
+    color: #0b0f19;
+    padding: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    list-style: none; /* Remove a setinha padrão feia do navegador */
+    user-select: none;
+    transition: background 0.2s;
+}
+
+.btn-gabarito-abrir::-webkit-details-marker {
+    display: none; /* Remove a setinha no Chrome/Safari */
+}
+
+.btn-gabarito-abrir:hover {
+    background-color: #0284c7;
+    color: #fff;
+}
+
+.conteudo-gabarito {
+    padding: 20px;
+    background-color: #151d2a;
+    border-top: 1px solid #334155;
+}
+
+.conteudo-gabarito h3 {
+    color: #4ade80;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.conteudo-gabarito p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.nota-fechamento {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #1e293b;
+    color: #facc15 !important;
+    font-size: 0.9rem;
 }

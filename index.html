@@ -84,7 +84,7 @@
 
         <section class="card-secao">
             <h2>🎴 Curiosidades Interativas</h2>
-            <p class="instrucao">Passe o mouse por cima dos cards para revelar as respostas:</p>
+            <p class="instrucao">Passe por cima dos cards para revelar as respostas:</p>
 
             <div class="grid-curiosidades">
                 <div class="flip-card">
@@ -125,9 +125,11 @@
             </div>
         </section>
 
-        <section class="card-secao">
-            <h2>📝 Teste de Conhecimento</h2>
-            <form class="quiz-form">
+            <section class="card-secao secao-quiz">
+            <h2>📝 Teste de Conhecimento: Desafio Los Santos</h2>
+            <p class="instrucao">Responda às perguntas abaixo e depois abra o gabarito oficial para conferir sua pontuação e se gabar com a galera!</p>
+            
+            <div class="quiz-container">
                 <div class="pergunta-box">
                     <p><strong>1. Qual personagem desacelera o tempo ao dirigir?</strong></p>
                     <label><input type="radio" name="p1"> Michael</label>
@@ -156,11 +158,18 @@
                     <label><input type="radio" name="p4"> O Soco no Estômago</label>
                 </div>
 
-                <details class="gabarito-btn">
-                    <summary>Ver Gabarito</summary>
-                    <p><strong>1:</strong> Franklin | <strong>2:</strong> Los Santos | <strong>3:</strong> Lester Crest | <strong>4:</strong> Prólogo</p> 
+                <details class="gabarito-detalhes-puro">
+                    <summary class="btn-gabarito-abrir">Ver Gabarito e Respostas Corretas</summary>
+                    <div class="conteudo-gabarito">
+                        <h3>🎯 Gabarito Oficial de Los Santos</h3>
+                        <p><strong>1. Franklin</strong> — A habilidade especial dele é desacelerar o tempo enquanto dirige veículos.</p>
+                        <p><strong>2. Los Santos</strong> — O mapa principal é baseado em Los Angeles e sul da Califórnia.</p>
+                        <p><strong>3. Lester Crest</strong> — É a mente mestre por trás de todos os grandes golpes do jogo.</p>
+                        <p><strong>4. Prólogo</strong> — A missão inicial que se passa em North Yankton sob a neve.</p>
+                        <p class="nota-fechamento"><em>E aí, quantos você acertou? Se gabarito fechado, você é um verdadeiro mito nas ruas de San Andreas!</em></p>
+                    </div>
                 </details>
-            </form>
+            </div>
         </section>
 
         <section class="card-secao">
