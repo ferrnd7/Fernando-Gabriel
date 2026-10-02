@@ -7,107 +7,107 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body>
- 
-    <!-- Nova Barra de Navegação -->
+
+    <!-- Menu: cada link rola até a seção que tem o mesmo id -->
     <nav class="navbar">
-        <div class="logo">
-            
-            <strong>R*</strong> 
-        </div>
+        <div class="logo"><strong>R*</strong></div>
         <ul class="nav-links">
-    <li><a href="https://www.rockstargames.com/br/games" target="_blank">JOGOS</a></li>
-    <li><a href="https://www.rockstargames.com/br/newswire" target="_blank">NOTÍCIAS</a></li>
-    <li><a href="https://www.rockstargames.com/br/videos" target="_blank">VÍDEOS</a></li>
-    <li><a href="https://www.rockstargames.com/br" target="_blank">EXPLORAR</a></li>
-    <li><a href="01" target="_blank">sobre</a></li>
-</ul>
+            <li><a href="#sobre">JOGO ▾</a>
+                <ul class="submenu">
+                    <li><a href="#sobre">Sobre o jogo</a></li>
+                    <li><a href="#personagens">Protagonistas</a></li>
+                    <li><a href="#estatisticas">Estatísticas</a></li>
+                </ul>
+            </li>
+            <li><a href="#galeria">GALERIA</a></li>
+            <li><a href="#curiosidades">EXTRAS ▾</a>
+                <ul class="submenu">
+                    <li><a href="#curiosidades">Curiosidades</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                </ul>
+            </li>
+            <li><a href="#contato">CONTATO</a></li>
+        </ul>
         <div class="nav-actions">
-            <button class="btn-launcher">Obtenha o Launcher</button>
+            <a href="https://www.rockstargames.com/br" target="_blank" class="btn-launcher">Obtenha o Launcher</a>
         </div>
     </nav>
 
-    <!-- Novo Banner Estilo Rockstar -->
+    <!-- Banner -->
     <header class="hero-banner">
-        <!-- A imagem de fundo será aplicada via CSS nesta div -->
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <span class="hero-tagline">GRAND THEFT AUTO V</span>
             <h1 class="hero-titulo">Bem-vindo a Los Santos</h1>
             <div class="hero-botoes">
-                <button class="btn-primario">Saiba mais</button>
-                <button class="btn-secundario">Compre agora ↗</button>
+                <a href="#sobre" class="btn-primario">Saiba mais</a>
+                <a href="https://www.rockstargames.com/br/games" target="_blank" class="btn-secundario">Compre agora ↗</a>
             </div>
         </div>
     </header>
 
     <main class="conteudo">
-        
-        <!-- Sobre o Jogo -->
-        <section class="card-secao">
-            <h2>Sobre o Jogo</h2>
-            <p>Grand Theft Auto V é um jogo eletrônico de ação e aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. Lançado originalmente em 2013, o título se tornou um dos maiores sucessos de vendas e da crítica na história da indústria dos videogames.</p>
-            <p>A história se passa no estado fictício de San Andreas, baseado na Califórnia do Sul, e segue três criminosos: Michael De Santa, Trevor Philips e Franklin Clinton.</p>
-            <p>O grande diferencial do jogo é a possibilidade de alternar livremente entre esses três protagonistas durante as missões ou no modo livre, permitindo uma dinâmica única para explorar a vasta cidade de Los Santos.</p>
+
+        <!-- Sobre o Jogo (zigue-zague) -->
+        <section class="faixa" id="sobre">
+            <img class="faixa-img" src="https://i.imgur.com/pNmwSti.jpg" alt="Cenário de GTA V">
+            <div class="faixa-texto">
+                <h2>Sobre o Jogo</h2>
+                <p>Grand Theft Auto V é um jogo de ação e aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. Lançado em 2013, tornou-se um dos maiores sucessos de vendas e de crítica da história dos videogames.</p>
+                <p>A história se passa em San Andreas, estado fictício inspirado na Califórnia do Sul, e o grande diferencial é alternar livremente entre os três protagonistas.</p>
+            </div>
         </section>
 
-        <!-- Protagonistas -->
-        <section class="card-secao">
-            <h2>Protagonistas</h2>
-            <div class="grid-personagens">
-                <div class="mini-card">
-                    <img src="https://wallpaperaccess.com/full/1216135.jpg" alt="Franklin" class="avatar-personagem">
+        <!-- Protagonistas (zigue-zague) -->
+        <section id="personagens">
+            <h2 class="titulo-bloco">Protagonistas</h2>
+
+            <div class="faixa">
+                <img class="faixa-img" src="https://wallpaperaccess.com/full/1216135.jpg" alt="Franklin">
+                <div class="faixa-texto">
                     <h3>Franklin Clinton</h3>
                     <p>Jovem e ambicioso, busca crescer na vida urbana de Los Santos.</p>
+                    <p class="detalhe">Especialidade: Direção · Câmera lenta ao dirigir</p>
                 </div>
-                <div class="mini-card">
-                    <img src="https://wallpapercave.com/wp/wp7761638.jpg" alt="Michael" class="avatar-personagem">
+            </div>
+
+            <div class="faixa inverte">
+                <img class="faixa-img" src="https://wallpapercave.com/wp/wp7761638.jpg" alt="Michael">
+                <div class="faixa-texto">
                     <h3>Michael De Santa</h3>
                     <p>Ex-assaltante veterano vivendo no programa de proteção a testemunhas.</p>
+                    <p class="detalhe">Especialidade: Tiroteio · Câmera lenta em combates a pé</p>
                 </div>
-                <div class="mini-card">
-                    <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/10/gta-5-trevor-promo-art.jpg" alt="Trevor" class="avatar-personagem">
+            </div>
+
+            <div class="faixa">
+                <img class="faixa-img" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/10/gta-5-trevor-promo-art.jpg" alt="Trevor">
+                <div class="faixa-texto">
                     <h3>Trevor Philips</h3>
                     <p>Ex-piloto militar sociopata, imprevisível e destemido.</p>
+                    <p class="detalhe">Especialidade: Combate e aviões · Modo Fúria (mais dano e menos dano recebido)</p>
                 </div>
             </div>
         </section>
 
         <!-- Estatísticas -->
-        <section class="card-secao">
+        <section class="card-secao" id="estatisticas">
             <h2>Estatísticas dos Personagens</h2>
             <table>
                 <thead>
-                    <tr>
-                        <th>Personagem</th>
-                        <th>Especialidade</th>
-                        <th>Habilidade Especial</th>
-                    </tr>
+                    <tr><th>Personagem</th><th>Especialidade</th><th>Habilidade Especial</th></tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Franklin</td>
-                        <td>Pilotagem</td>
-                        <td>Câmera lenta ao dirigir</td>
-                    </tr>
-                    <tr>
-                        <td>Michael</td>
-                        <td>Tiroteio</td>
-                        <td>Câmera lenta em combates a pé</td>
-                    </tr>
-                    <tr>
-                        <td>Trevor</td>
-                        <td>Combate e Pilotagem de Aviões</td>
-                        <td>Modo Fúria (invulnerabilidade temporária)</td>
-                    </tr>
+                    <tr><td>Franklin</td><td>Direção</td><td>Câmera lenta ao dirigir</td></tr>
+                    <tr><td>Michael</td><td>Tiroteio</td><td>Câmera lenta em combates a pé</td></tr>
+                    <tr><td>Trevor</td><td>Combate e Pilotagem de Aviões</td><td>Modo Fúria (mais dano e menos dano recebido)</td></tr>
                 </tbody>
             </table>
         </section>
 
         <!-- Galeria -->
-        <section class="card-secao">
+        <section class="card-secao" id="galeria">
             <h2>📸 Galeria de Los Santos</h2>
             <div class="galeria-grid">
                 <img src="https://i.imgur.com/pNmwSti.jpg" alt="GTA V Screenshot 1">
@@ -117,9 +117,9 @@
         </section>
 
         <!-- Curiosidades -->
-        <section class="card-secao">
+        <section class="card-secao" id="curiosidades">
             <h2>🎴 Curiosidades Interativas</h2>
-            <p class="instrucao">Passe por cima dos cards para revelar as respostas:</p>
+            <p class="instrucao">Passe o mouse por cima dos cards para revelar as respostas:</p>
 
             <div class="grid-curiosidades">
                 <div class="flip-card">
@@ -160,38 +160,38 @@
             </div>
         </section>
 
-        <!-- Teste de Conhecimento -->
-        <section class="card-secao secao-quiz">
-            <h2>📝 Teste de Conhecimento: Desafio Los Santos</h2>
-            <p class="instrucao">Responda às perguntas abaixo e depois abra o gabarito oficial para conferir sua pontuação e se gabar com a galera!</p>
-            
+        <!-- Quiz -->
+        <section class="card-secao secao-quiz" id="quiz">
+            <h2>📝 Desafio Los Santos</h2>
+            <p class="instrucao">Marque uma resposta: fica verde se acertou e vermelho se errou. Depois abra o gabarito para conferir.</p>
+
             <div class="quiz-container">
                 <div class="pergunta-box">
                     <p><strong>1. Qual personagem desacelera o tempo ao dirigir?</strong></p>
-                    <label><input type="radio" name="p1"> Michael</label>
-                    <label><input type="radio" name="p1"> Trevor</label>
-                    <label><input type="radio" name="p1"> Franklin</label>
+                    <label class="opcao"><input type="radio" name="p1"> Michael</label>
+                    <label class="opcao"><input type="radio" name="p1"> Trevor</label>
+                    <label class="opcao certa"><input type="radio" name="p1"> Franklin</label>
                 </div>
 
                 <div class="pergunta-box">
                     <p><strong>2. Em qual cidade se passa a maior parte do jogo?</strong></p>
-                    <label><input type="radio" name="p2"> Liberty City</label>
-                    <label><input type="radio" name="p2"> Los Santos</label>
-                    <label><input type="radio" name="p2"> Vice City</label>
+                    <label class="opcao"><input type="radio" name="p2"> Liberty City</label>
+                    <label class="opcao certa"><input type="radio" name="p2"> Los Santos</label>
+                    <label class="opcao"><input type="radio" name="p2"> Vice City</label>
                 </div>
 
                 <div class="pergunta-box">
                     <p><strong>3. Qual é o hacker que planeja os assaltos no jogo?</strong></p>
-                    <label><input type="radio" name="p3"> Lamar Davis</label>
-                    <label><input type="radio" name="p3"> Lester Crest</label>
-                    <label><input type="radio" name="p3"> Devin Weston</label>
+                    <label class="opcao"><input type="radio" name="p3"> Lamar Davis</label>
+                    <label class="opcao certa"><input type="radio" name="p3"> Lester Crest</label>
+                    <label class="opcao"><input type="radio" name="p3"> Devin Weston</label>
                 </div>
 
                 <div class="pergunta-box">
-                    <p><strong>4. Qual é o nome da PRIMEIRA missão do modo história do GTA V?</strong></p>
-                    <label><input type="radio" name="p4"> Prólogo (Prologue)</label>
-                    <label><input type="radio" name="p4"> Franklin e Lamar</label>
-                    <label><input type="radio" name="p4"> O Soco no Estômago</label>
+                    <p><strong>4. Qual é o nome da PRIMEIRA missão do modo história?</strong></p>
+                    <label class="opcao certa"><input type="radio" name="p4"> Prólogo (Prologue)</label>
+                    <label class="opcao"><input type="radio" name="p4"> Franklin e Lamar</label>
+                    <label class="opcao"><input type="radio" name="p4"> O Soco no Estômago</label>
                 </div>
 
                 <details class="gabarito-detalhes-puro">
@@ -200,16 +200,16 @@
                         <h3>🎯 Gabarito Oficial de Los Santos</h3>
                         <p><strong>1. Franklin</strong> — A habilidade especial dele é desacelerar o tempo enquanto dirige veículos.</p>
                         <p><strong>2. Los Santos</strong> — O mapa principal é baseado em Los Angeles e sul da Califórnia.</p>
-                        <p><strong>3. Lester Crest</strong> — É a mente mestre por trás de todos os grandes golpes do jogo.</p>
-                        <p><strong>4. Prólogo</strong> — A missão inicial que se passa em North Yankton sob a neve.</p>
-                        <p class="nota-fechamento"><em>E aí, quantos você acertou? Se gabarito fechado, você é um verdadeiro mito nas ruas de San Andreas!</em></p>
+                        <p><strong>3. Lester Crest</strong> — É a mente por trás de todos os grandes golpes do jogo.</p>
+                        <p><strong>4. Prólogo</strong> — A missão inicial que se passa em North Yankton, sob a neve.</p>
+                        <p class="nota-fechamento"><em>E aí, quantos você acertou? Se acertou tudo, você é um verdadeiro mito nas ruas de San Andreas!</em></p>
                     </div>
                 </details>
             </div>
         </section>
 
-        <!-- Fale Conosco -->
-        <section class="card-secao">
+        <!-- Contato -->
+        <section class="card-secao" id="contato">
             <h2>Fale Conosco</h2>
             <form action="https://formsubmit.co/feernandogabriell@outlook.com" method="POST" class="form-contato">
                 <input type="text" name="name" placeholder="Seu Nome" required>
@@ -224,6 +224,20 @@
         </section>
 
     </main>
+
+    <footer class="rodape">
+        <div class="rodape-logo">R*</div>
+        <h3>Fique por dentro de Los Santos</h3>
+        <p>Quer saber mais sobre o jogo? Visite o site oficial da Rockstar Games.</p>
+        <a href="https://www.rockstargames.com/br" target="_blank" class="btn-pilula">Visitar site oficial</a>
+        <nav class="rodape-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#personagens">Protagonistas</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </footer>
 
 </body>
 </html>
