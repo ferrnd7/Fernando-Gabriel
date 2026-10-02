@@ -4,51 +4,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - GTA V</title>
+    <title>GTA V - Grand Theft Auto 5</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Menu: cada link rola até a seção que tem o mesmo id -->
     <nav class="navbar">
         <div class="logo"><a href="index.html"><strong>R*</strong></a></div>
         <ul class="nav-links">
-            <li><a href="index.html#sobre">JOGO ▾</a>
+            <li><a href="#sobre">JOGO ▾</a>
                 <ul class="submenu">
-                    <li><a href="index.html#sobre">Sobre o jogo</a></li>
-                    <li><a href="index.html#personagens">Protagonistas</a></li>
-                    <li><a href="index.html#estatisticas">Estatísticas</a></li>
+                    <li><a href="#sobre">Sobre o jogo</a></li>
+                    <li><a href="#personagens">Protagonistas</a></li>
+                    <li><a href="#estatisticas">Estatísticas</a></li>
                 </ul>
             </li>
-            <li><a href="index.html#galeria">GALERIA</a></li>
-            <li><a href="curiosidades.html">EXTRAS ▾</a>
+            <li><a href="#galeria">GALERIA</a></li>
+            <li><a href="pages/curi.html">EXTRAS ▾</a>
                 <ul class="submenu">
-                    <li><a href="curiosidades.html">Curiosidades</a></li>
-                    <li><a href="quiz.html">Quiz</a></li>
+                    <li><a href="pages/curi.html">Curiosidades</a></li>
+                    <li><a href="pages/quiz.html">Quiz</a></li>
                 </ul>
             </li>
-            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="pages/contato.html">CONTATO</a></li>
         </ul>
         <div class="nav-actions">
             <a href="https://www.rockstargames.com/br" target="_blank" class="btn-launcher">Obtenha o Launcher</a>
         </div>
     </nav>
 
-    <main class="conteudo pagina">
+    <!-- Banner -->
+    <header class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tagline">GRAND THEFT AUTO V</span>
+            <h1 class="hero-titulo">Bem-vindo a Los Santos</h1>
+            <div class="hero-botoes">
+                <a href="#sobre" class="btn-primario">Saiba mais</a>
+                <a href="https://www.rockstargames.com/br/games" target="_blank" class="btn-secundario">Compre agora ↗</a>
+            </div>
+        </div>
+    </header>
 
-        <!-- Contato -->
-        <section class="card-secao" id="contato">
-            <h2>Fale Conosco</h2>
-            <form action="https://formsubmit.co/feernandogabriell@outlook.com" method="POST" class="form-contato">
-                <input type="text" name="name" placeholder="Seu Nome" required>
-                <input type="email" name="email" placeholder="Seu E-mail" required>
-                <textarea name="message" placeholder="Digite sua mensagem aqui..." rows="4" required></textarea>
+    <main class="conteudo">
 
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="Novo contato do site GTA V!">
+        <!-- Sobre o Jogo (zigue-zague) -->
+        <section class="faixa" id="sobre">
+            <img class="faixa-img" src="https://i.imgur.com/pNmwSti.jpg" alt="Cenário de GTA V">
+            <div class="faixa-texto">
+                <h2>Sobre o Jogo</h2>
+                <p>Grand Theft Auto V é um jogo de ação e aventura desenvolvido pela Rockstar North e publicado pela Rockstar Games. Lançado em 2013, tornou-se um dos maiores sucessos de vendas e de crítica da história dos videogames.</p>
+                <p>A história se passa em San Andreas, estado fictício inspirado na Califórnia do Sul, e o grande diferencial é alternar livremente entre os três protagonistas.</p>
+            </div>
+        </section>
 
-                <button type="submit">Enviar Mensagem</button>
-            </form>
+        <!-- Protagonistas (zigue-zague) -->
+        <section id="personagens">
+            <h2 class="titulo-bloco">Protagonistas</h2>
+
+            <div class="faixa">
+                <img class="faixa-img" src="https://wallpaperaccess.com/full/1216135.jpg" alt="Franklin">
+                <div class="faixa-texto">
+                    <h3>Franklin Clinton</h3>
+                    <p>Jovem e ambicioso, busca crescer na vida urbana de Los Santos.</p>
+                    <p class="detalhe">Especialidade: Direção · Câmera lenta ao dirigir</p>
+                </div>
+            </div>
+
+            <div class="faixa inverte">
+                <img class="faixa-img" src="https://wallpapercave.com/wp/wp7761638.jpg" alt="Michael">
+                <div class="faixa-texto">
+                    <h3>Michael De Santa</h3>
+                    <p>Ex-assaltante veterano vivendo no programa de proteção a testemunhas.</p>
+                    <p class="detalhe">Especialidade: Tiroteio · Câmera lenta em combates a pé</p>
+                </div>
+            </div>
+
+            <div class="faixa">
+                <img class="faixa-img" src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/10/gta-5-trevor-promo-art.jpg" alt="Trevor">
+                <div class="faixa-texto">
+                    <h3>Trevor Philips</h3>
+                    <p>Ex-piloto militar sociopata, imprevisível e destemido.</p>
+                    <p class="detalhe">Especialidade: Combate e aviões · Modo Fúria (mais dano e menos dano recebido)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estatísticas -->
+        <section class="card-secao" id="estatisticas">
+            <h2>Estatísticas dos Personagens</h2>
+            <table>
+                <thead>
+                    <tr><th>Personagem</th><th>Especialidade</th><th>Habilidade Especial</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Franklin</td><td>Direção</td><td>Câmera lenta ao dirigir</td></tr>
+                    <tr><td>Michael</td><td>Tiroteio</td><td>Câmera lenta em combates a pé</td></tr>
+                    <tr><td>Trevor</td><td>Combate e Pilotagem de Aviões</td><td>Modo Fúria (mais dano e menos dano recebido)</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Galeria -->
+        <section class="card-secao" id="galeria">
+            <h2>📸 Galeria de Los Santos</h2>
+            <div class="galeria-grid">
+                <img src="https://i.imgur.com/pNmwSti.jpg" alt="GTA V Screenshot 1">
+                <img src="https://i.imgur.com/iLtkIe1.jpg" alt="GTA V Screenshot 2">
+                <img src="https://i.imgur.com/cKEqyA2.jpg" alt="GTA V Screenshot 3">
+            </div>
         </section>
 
     </main>
@@ -59,11 +125,11 @@
         <p>Quer saber mais sobre o jogo? Visite o site oficial da Rockstar Games.</p>
         <a href="https://www.rockstargames.com/br" target="_blank" class="btn-pilula">Visitar site oficial</a>
         <nav class="rodape-links">
-            <a href="index.html#sobre">Sobre</a>
-            <a href="index.html#personagens">Protagonistas</a>
-            <a href="index.html#galeria">Galeria</a>
-            <a href="quiz.html">Quiz</a>
-            <a href="contato.html">Contato</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#personagens">Protagonistas</a>
+            <a href="#galeria">Galeria</a>
+            <a href="pages/quiz.html">Quiz</a>
+            <a href="pages/contato.html">Contato</a>
         </nav>
     </footer>
 
