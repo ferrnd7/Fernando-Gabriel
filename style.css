@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap');
 
 :root {
-    --fundo: #12081f;          /* roxo bem escuro (noite) */
-    --card: #1d1030;           /* roxo dos cartões */
-    --card-claro: #2a1844;     /* roxo mais claro */
-    --rosa: #ff3d81;           /* rosa neon */
-    --laranja: #ff9a3c;        /* laranja do pôr do sol */
-    --ciano: #2ee6d6;          /* ciano neon */
+    --fundo: #12081f;          
+    --card: #1d1030;         
+    --card-claro: #2a1844;    
+    --rosa: #ff3d81;         
+    --laranja: #ff9a3c;        
+    --ciano: #2ee6d6;         
     --texto: #f3eaff;
     --texto-suave: #b9a8d6;
     --fonte-titulo: 'Bebas Neue', Impact, sans-serif;
     --fonte-texto: 'Barlow', 'Segoe UI', Tahoma, sans-serif;
 }
-
-/* --- Configurações globais --- */
 * {
+
+
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;   /* rolagem suave ao clicar em links internos */
-    scroll-padding-top: 90px;  /* evita o menu fixo cobrir o título */
+    scroll-behavior: smooth;  
+    scroll-padding-top: 90px; 
 }
 
 body {
-    /* três "luzes" coloridas por cima do roxo escuro; ficam fixas ao rolar */
+    
     background:
         radial-gradient(ellipse 80% 50% at 90% 0%, rgba(255, 61, 129, 0.30), transparent 60%),
         radial-gradient(ellipse 70% 50% at 0% 45%, rgba(46, 230, 214, 0.15), transparent 60%),
@@ -45,14 +45,14 @@ body {
     padding: 0 20px;
 }
 
-/* Contorno visível ao navegar com o teclado (acessibilidade) */
+
 a:focus-visible, button:focus-visible, summary:focus-visible,
 input:focus-visible, textarea:focus-visible {
     outline: 3px solid var(--ciano);
     outline-offset: 3px;
 }
 
-/* --- Menu de navegação --- */
+
 .navbar {
     display: flex;
     justify-content: space-between;
