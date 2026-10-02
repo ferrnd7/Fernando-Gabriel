@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&display=swap');
 
 :root {
@@ -452,53 +451,6 @@ tbody tr:hover {
     border-color: #ff6b8a;
 }
 
-/* --- Gabarito --- */
-.gabarito-detalhes-puro {
-    background-color: var(--card-claro);
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.btn-gabarito-abrir {
-    background-color: var(--ciano);
-    color: var(--fundo);
-    padding: 14px;
-    font-weight: 600;
-    text-align: center;
-    cursor: pointer;
-    list-style: none;
-    user-select: none;
-    transition: background-color 0.2s;
-}
-
-.btn-gabarito-abrir::-webkit-details-marker {
-    display: none;
-}
-
-.btn-gabarito-abrir:hover {
-    background-color: #5ff0e3;
-}
-
-.conteudo-gabarito {
-    padding: 20px;
-    border-top: 2px solid var(--ciano);
-}
-
-.conteudo-gabarito h3 {
-    font-family: var(--fonte-titulo);
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: #4ade80;
-    margin-bottom: 12px;
-}
-
-.nota-fechamento {
-    margin-top: 15px;
-    padding-top: 10px;
-    border-top: 1px solid var(--card);
-    color: var(--laranja);
-}
-
 /* --- Formulário --- */
 .form-contato {
     display: flex;
@@ -589,8 +541,9 @@ tbody tr:hover {
 
 .faixa-img {
     width: 48%;
-    height: 320px;
-    object-fit: cover;
+    height: auto;            /* altura automática: a imagem aparece inteira */
+    max-height: 460px;
+    object-fit: contain;
     border-bottom: 4px solid var(--rosa);
 }
 
@@ -643,5 +596,13 @@ tbody tr:hover {
 
 @media (max-width: 700px) {
     .faixa, .faixa.inverte { flex-direction: column; gap: 20px; }
-    .faixa-img { width: 100%; height: 220px; }
+    .faixa-img { width: 100%; }
 }
+
+/* --- Páginas internas (quiz, curiosidades, contato) --- */
+.pagina { padding-top: 100px; min-height: 70vh; }
+.logo a { color: inherit; text-decoration: none; }
+
+/* --- Resposta aparece só depois de clicar --- */
+.opcao.certa:has(input:checked)::after { content: "  ✔ Acertou!"; font-weight: 600; }
+.opcao:not(.certa):has(input:checked)::after { content: "  ✘ Errou, tente outra!"; font-weight: 600; }
